@@ -1,0 +1,111 @@
+body * {
+    
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+
+/*
+section {
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+
+section img  {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+/*
+
+
+/* NAVBAR */
+
+.navbar {
+    background-color: #000708;
+}
+
+.viajes {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #ffffffa5;
+    font-weight: 400;
+}
+
+/* CARRUSEL  */
+.carousel-inner {
+    margin-top: -90px;
+}
+
+/*.carousel-inner {
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 1.2rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+}
+
+/* QUIENES SOMOS */
+
+.fondo-negro {
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #000000, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #000000, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.card-iconos {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    text-align: left;
+    background-color: black;
+    font-size: 13px;
+}
+
+.fondo {
+    background-color:  #00d0ff;
+    text-align: center;
+}
+
+.card-body {
+    align-items: center;
+    margin-top: -25px;
+    margin-bottom: -25px;
+}
+
+.card-destacados {
+    background-color:  #00d0ff;
+}
+
+.card img { 
+    height: 12rem;
+}
+
+
+/* FOOTER*/
+
+.fondo {
+    background-color: #00d0ff;
+}
+
+.iconos a {
+    color: #FFFFFF;
+}
+
+.iconos {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
