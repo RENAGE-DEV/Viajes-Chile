@@ -27,11 +27,11 @@ section img  {
 /* NAVBAR */
 
 .navbar {
-    background-color: #000708;
+    background-color: #000000;
 }
 
 .viajes {
-    color: #FFFFFF;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -65,16 +65,16 @@ background: linear-gradient(to right, #000000, #000000); /* W3C, IE 10+/ Edge, F
 }
 .card-iconos {
     display: flex;
-    gap: 25px;
+    gap: 30px;
     justify-content: center;
-    text-align: left;
+    text-align: justify;
     background-color: black;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .fondo {
     background-color:  #00d0ff;
-    text-align: center;
+    text-align: justify;
 }
 
 .card-body {
@@ -84,7 +84,9 @@ background: linear-gradient(to right, #000000, #000000); /* W3C, IE 10+/ Edge, F
 }
 
 .card-destacados {
-    background-color:  #00d0ff;
+    background: #d4c79b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #cf8422, #1f68ac);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #b6a231, #1ba5b8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .card img { 
@@ -108,4 +110,64 @@ background: linear-gradient(to right, #000000, #000000); /* W3C, IE 10+/ Edge, F
     align-items: center;
     text-align: center;
     justify-content: center;
+}
+
+
+
+/* Estilos Generales para las Tarjetas */
+.card {
+    border: none; /* Elimina el borde predeterminado */
+    border-radius: 15px; /* Bordes redondeados para un diseño más suave */
+    overflow: hidden; /* Asegura que el contenido no se desborde fuera de los bordes redondeados */
+    transition: transform 0.7s ease, box-shadow 0.3s ease; /* Transiciones suaves para efectos */
+    position: relative; /* Para el posicionamiento absoluto de contenido interno */
+}
+
+/* Estilo de la Imagen de la Tarjeta */
+.card-img-top {
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsión */
+    height: 100px; /* Altura fija para la imagen */
+    transition: transform 0.6s ease; /* Transición suave para el efecto de zoom */
+}
+
+/* Efecto Hover en la Imagen */
+.card:hover .card-img-top {
+    transform: scale(1.6); /* Zoom en la imagen cuando se pasa el ratón por encima */
+}
+
+/* Estilo del Contenido de la Tarjeta */
+.card-body {
+    background-color: #c2d8e0; /* Fondo blanco para el contenido de la tarjeta */
+    color: #333333; /* Color de texto oscuro para mejor legibilidad */
+    padding: 40px; /* Espaciado interno alrededor del texto */
+    text-align: justify; /* Centra el texto dentro de la tarjeta */
+}
+
+/* Estilo del Título de la Tarjeta */
+.card-title {
+    font-size: 1.25rem; /* Tamaño de fuente más grande para el título */
+    font-weight: bold; /* Negrita para destacar el título */
+    margin-bottom: 15px; /* Espaciado debajo del título */
+}
+
+/* Estilo del Texto de la Tarjeta */
+.card-text {
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño para el texto */
+    line-height: 1.6; /* Mayor altura de línea para mejorar la legibilidad */
+}
+
+/* Estilo para el Efecto de Hover en la Tarjeta */
+.card:hover {
+    transform: translateY(-30px); /* Eleva la tarjeta al pasar el ratón por encima */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra para dar profundidad */
+}
+
+/* Estilo para la Tarjeta Destacada */
+.card-destacados {
+    background: linear-gradient(to right, #cf8422, #1f68ac); /* Gradiente de fondo */
+    color: #ffffff; /* Color del texto blanco para contraste */
+}
+
+.card-destacados .card-title {
+    color: #ffffff; /* Asegura que el título sea visible sobre el fondo */
 }
